@@ -1,0 +1,73 @@
+Method: GET http://localhost:8080/api/user/list
+Получает список всех юзеров
+ответ: [
+    {
+{
+        "id": 2,
+        "name": "trello",
+        "surname": "trekolov",
+        "email": "tirer@mail.com",
+        "phone": "+99655895055"
+    },
+    {
+        "id": 4,
+        "name": "walik",
+        "surname": "walkkov",
+        "email": "wal@mail.com",
+        "phone": "+996330459875"
+    }
+]
+Method: DELETE http://localhost:8080/api/user/{id}
+Удаляет юзера по id
+
+Method: GET http://localhost:8080/api/user/{id}
+Получает юзера по id
+ответ:
+{
+    "id": 4,
+    "name": "walik",
+    "surname": "walkkov",
+    "email": "wal@mail.com",
+    "phone": "+996330459875"
+}
+
+Method: POST http://localhost:8080/api/user/save
+Добавляет нового юзера в БД
+запрос:
+{
+       "name": "jorik",
+        "surname": "jorikov",
+        "email": "jorik@mail.com",
+        "phone": "+9963304888995"
+    }
+
+Method: PUT http://localhost:8080/api/user/update
+Обновляет юзера
+запрос:
+{
+        "id": 3,
+        "name": "tony",
+        "surname": "montana",
+        "email": "tony@mail.com",
+        "phone": "+996558444555"
+    }
+
+
+    # Запуск интеграционных тестов контроллеров
+
+    Для запуска интеграционных тестов контроллеров вам необходимо выполнить следующие шаги:
+
+    1. Откройте проект в вашей среде разработки (например, IntelliJ IDEA).
+
+    2. Перейдите в директорию `src/test/controller`.
+
+    3. Выберите контроллер, который вы хотите протестировать.
+
+    4. Внутри выбранного контроллера выберите метод, который вы хотите запустить.
+
+    5. Запустите тест, используя соответствующую опцию вашей среды разработки.
+
+       **Или**
+
+       Запустите весь тестовый класс контроллера или даже весь пакет тестов.
+
